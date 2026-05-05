@@ -4,6 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="google" content="notranslate" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google" content="notranslate" />
+  <meta http-equiv="Content-Language" content="pt-BR" />
   <meta name="theme-color" content="#4a7c2f" />
   <meta name="description" content="PIB Cataguases - Educação Cristã 2° Trimestre 2026" />
   <title>PIB Cataguases - Estudo Bíblico</title>
@@ -411,6 +413,34 @@
       font-size: 18px !important;
       padding: 14px 32px !important;
     }
+    /* Acessibilidade — Chatbot */
+    body.modo-acessivel .chat-msg {
+      font-size: 16px !important;
+      line-height: 1.7 !important;
+    }
+    body.modo-acessivel .chat-pergunta-btn {
+      font-size: 15px !important;
+      padding: 11px 14px !important;
+    }
+    body.modo-acessivel .chat-nivel-btn {
+      font-size: 14px !important;
+      padding: 9px 8px !important;
+    }
+    body.modo-acessivel .chat-input {
+      font-size: 15px !important;
+      padding: 10px 18px !important;
+    }
+    body.modo-acessivel .chat-header-title {
+      font-size: 17px !important;
+    }
+    body.modo-acessivel .chat-header-sub {
+      font-size: 13px !important;
+    }
+    body.modo-acessivel .chat-panel {
+      width: 370px !important;
+      max-height: 580px !important;
+    }
+
     body.modo-acessivel .atividade-box {
       font-size: 19px !important;
       line-height: 2 !important;
@@ -542,6 +572,7 @@
       display: flex; flex-direction: column; gap: 10px;
       background: #F8F9FA;
     }
+    .chat-msgs { overscroll-behavior: contain; }
     .chat-msgs::-webkit-scrollbar { width: 4px; }
     .chat-msgs::-webkit-scrollbar-thumb { background: #D0B62F40; border-radius: 4px; }
 
@@ -2339,76 +2370,75 @@ const FAQ = {
   1: {
     iniciante: [
     {p: 'O Espírito Santo é uma pessoa ou apenas uma influência?', r: 'Ele é uma pessoa real, dotada de inteligência para ensinar e fazer lembrar as verdades de Jesus, e não apenas um poder impessoal ou influência divina.'},
-    {p: 'Qual o significado da palavra grega', r: 'pneuma? Deriva de raízes que significam "soprar", "respirar" ou "vento", mas a Bíblia lhe atribui atos de personalidade como falar, testificar e ordenar.'},
+    {p: 'Qual o significado da palavra grega pneuma?', r: 'Deriva de raízes que significam "soprar", "respirar" ou "vento", mas a Bíblia lhe atribui atos de personalidade como falar, testificar e ordenar.'},
     {p: 'O Espírito Santo possui inteligência?', r: 'Sim, Ele possui inteligência para ensinar e fazer os discípulos recordarem as verdades ensinadas por Cristo durante Seu ministério terreno.'},
     {p: 'Quem enviou o Consolador e por quê?', r: 'O Pai enviou o Espírito Santo a pedido de Jesus para que os discípulos tivessem companhia, sabedoria e não se sentissem órfãos.'},
     {p: 'O Espírito Santo pode ser entristecido?', r: 'Sim, como pessoa dotada de sentimentos, Ele se entristece quando pecamos e nos confronta com a santidade de Cristo.'},
     {p: 'O Espírito Santo é onipresente?', r: 'Sim, sendo Deus, Ele habita o coração do salvo e está presente independentemente das circunstâncias ou lugares onde o cristão se encontre.'},
-    {p: 'Qual a missão do Espírito no plano da salvação?', r: 'Ele é o primeiro contato da Trindade com o pecador, agindo para convencê-lo de que Jesus Cristo é o único caminho para a salvação.'},
+    {p: 'Qual a missão do Espírito Santo no plano da salvação?', r: 'Ele é o primeiro contato da Trindade com o pecador, agindo para convencê-lo de que Jesus Cristo é o único caminho para a salvação.'},
     {p: 'O Espírito Santo é um ser criado?', r: 'Não, Ele possui todas as características do Pai e do Filho, sendo infinito, divino e eterno, não tendo sido criado.'},
     {p: 'O Espírito Santo executa atos de personalidade?', r: 'Sim, Ele sonda corações, fala, testifica, ordena, revela, luta, cria e intercede pelos salvos com gemidos inexprimíveis.'},
-    {p: 'Qual a virtude central destacada nesta lição?', r: 'A virtude é a Comunhão, refletindo o relacionamento de intimidade que o Espírito promove entre o salvo e Deus.'}
+    {p: 'Qual a virtude central destacada nesta lição?', r: 'A virtude é a Comunhão, refletindo o relacionamento de intimidade que o Espírito Santo promove entre o salvo e Deus.'}
     ],
     avancado: [
-    {p: 'Por que a finitude humana gera distorções sobre o Espírito?', r: 'A dificuldade em compreender a natureza do Espírito ocorre quando a mente humana limitada tenta conceituar a infinitude divina.'},
-    {p: 'O que significa dizer que o Espírito é o "executor da Deidade"?', r: 'Significa que tudo quanto Deus faz, Ele o executa por meio do Espírito Santo, manifestando Sua presença ativa no mundo.'},
+    {p: 'Por que a finitude humana gera distorções sobre o Espírito Santo?', r: 'A dificuldade em compreender a natureza do Espírito Santo ocorre quando a mente humana limitada tenta conceituar a infinitude divina.'},
+    {p: 'O que significa dizer que o Espírito Santo é o "executor da Deidade"?', r: 'Significa que tudo quanto Deus faz, Ele o executa por meio do Espírito Santo, manifestando Sua presença ativa no mundo.'},
     {p: 'Como a personalidade d\'Ele impede que Ele seja uma "visita"?', r: 'Diferente de uma visita, Ele habita permanentemente no salvo; Ele não marca hora nem abandona o cristão em momentos críticos.'},
-    {p: 'Qual a relação do Espírito com a manutenção da vida física?', r: 'O Espírito Santo mantém e renova a vida sobre a terra, sendo o sopro do Todo-poderoso que dá vida aos seres (Jó 33.4).'},
+    {p: 'Qual a relação do Espírito Santo com a manutenção da vida física?', r: 'O Espírito Santo mantém e renova a vida sobre a terra, sendo o sopro do Todo-poderoso que dá vida aos seres (Jó 33.4).'},
     {p: 'Como o Espírito Santo confirma nossa filiação com Deus?', r: 'Ele atua gerando sentimentos de gratidão espiritual e confirmando em nosso íntimo que somos, de fato, filhos de Deus (Rm 8.16).'},
-    {p: 'Como o Espírito Santo atua na santificação do cristão?', r: 'Ele promove a santificação ao nos levar a sentir tristeza pelo pecado e ao produzir em nós o Seu fruto, que é o caráter de Cristo.'},
-    {p: 'Qual a importância da palavra', r: 'ruah no hebraico para esta doutrina? Embora signifique "sopro" ou "vento", o termo é usado para descrever o Espírito que se movia na criação e inspirava profetas como pessoa.'},
-    {p: 'De que forma o Espírito lida com a mentira na igreja?', r: 'Ele age para eliminar a mentira e o pecado que impedem o bom testemunho cristão, como visto no caso de Ananias e Safira.'},
-    {p: 'O Espírito Santo age de forma independente de Cristo?', r: 'Não, todo o ministério de Jesus foi realizado na dependência do Espírito, e o Espírito age para glorificar e testemunhar de Cristo.'},
-    {p: 'Como o Espírito atua como intercessor?', r: 'Ele examina nossos corações e, sabendo que muitas vezes pedimos errado, intercede por nós com gemidos que não podem ser expressos em palavras.'}
+    {p: 'Qual a importância da palavra ruah no hebraico para esta doutrina?', r: 'Embora signifique "sopro" ou "vento", o termo é usado para descrever o Espírito Santo que se movia na criação e inspirava profetas como pessoa.'},
+    {p: 'De que forma o Espírito Santo lida com a mentira na igreja?', r: 'Ele age para eliminar a mentira e o pecado que impedem o bom testemunho cristão, como visto no caso de Ananias e Safira.'},
+    {p: 'O Espírito Santo age de forma independente de Cristo?', r: 'Não, todo o ministério de Jesus foi realizado na dependência do Espírito Santo, e o Espírito Santo age para glorificar e testemunhar de Cristo.'},
+    {p: 'Como o Espírito Santo atua como intercessor?', r: 'Ele examina nossos corações e, sabendo que muitas vezes pedimos errado, intercede por nós com gemidos que não podem ser expressos em palavras.'}
     ],
   },
   2: {
     iniciante: [
     {p: 'O Espírito Santo atuou na criação do universo?', r: 'Sim, Ele pairava sobre o caos para dar ordem e beleza à criação, estabelecendo as leis que regem o cosmos.'},
-    {p: 'O que o Espírito fez com o firmamento?', r: 'O Espírito Santo ornou o firmamento com belos astros e planetas, demonstrando Sua soberania na organização do universo.'},
-    {p: 'Quem deu nome aos animais pelo poder do Espírito?', r: 'Adão utilizou a habilidade e inteligência providenciadas pelo agir divino para nomear os animais e elementos da natureza.'},
-    {p: 'O Espírito Santo ajudou na construção do Tabernáculo?', r: 'Sim, Deus encheu artesãos com o Seu Espírito e sabedoria para realizarem o ministério específico da construção de cada peça.'},
-    {p: 'Como Neemias descreve a atuação do Espírito com o povo?', r: 'Ele afirma que Deus deu o Seu "bom Espírito" para ensinar e instruir o povo durante a jornada no deserto.'},
-    {p: 'O que aconteceu quando o Espírito saiu de Sansão?', r: 'Sansão perdeu seus dons extraordinários e a alegria de ser uma bênção, após ceder ao pecado e desobedecer ao Senhor.'},
+    {p: 'O que o Espírito Santo fez com o firmamento?', r: 'O Espírito Santo ornou o firmamento com belos astros e planetas, demonstrando Sua soberania na organização do universo.'},
+    {p: 'Quem deu nome aos animais pelo poder do Espírito Santo?', r: 'Adão utilizou a habilidade e inteligência providenciadas pelo agir divino para nomear os animais e elementos da natureza.'},
+    {p: 'O Espírito Santo ajudou na construção do Tabernáculo?', r: 'Sim, Deus encheu artesãos com o Seu Espírito Santo e sabedoria para realizarem o ministério específico da construção de cada peça.'},
+    {p: 'Como Neemias descreve a atuação do Espírito Santo com o povo?', r: 'Ele afirma que Deus deu o Seu "bom Espírito Santo" para ensinar e instruir o povo durante a jornada no deserto.'},
+    {p: 'O que aconteceu quando o Espírito Santo saiu de Sansão?', r: 'Sansão perdeu seus dons extraordinários e a alegria de ser uma bênção, após ceder ao pecado e desobedecer ao Senhor.'},
     {p: 'Qual a fonte da coragem do profeta Miqueias?', r: 'Ele afirmou explicitamente que sua coragem para condenar o pecado e pregar era produto da ação do Espírito Santo em sua vida.'},
     {p: 'Como os profetas falavam a mensagem de Deus?', r: 'Eles realizavam seu ministério sob a ação direta e inspiração do Espírito Santo, conforme confirmado pelo apóstolo Pedro.'},
-    {p: 'Davi acreditava que poderia perder a presença do Espírito?', r: 'No Salmo 51.11, ele suplica para que Deus não retire d\'Ele o Espírito Santo, reconhecendo Sua necessidade para o ministério.'},
+    {p: 'Davi acreditava que poderia perder a presença do Espírito Santo?', r: 'No Salmo 51.11, ele suplica para que Deus não retire d\'Ele o Espírito Santo, reconhecendo Sua necessidade para o ministério.'},
     {p: 'O Espírito Santo usa força física para convencer o homem?', r: 'Não, o convencimento ocorre pela ação amorosa do Espírito Santo e não por força ou violência de argumentos humanos.'}
     ],
     avancado: [
-    {p: 'Por que o Espírito é chamado de "administrador da Divindade"?', r: 'Porque Ele é o executor de tudo o que Deus faz; Deus jamais agiu sem o Seu Espírito e o Espírito jamais agiu sem o Pai e o Filho.'},
-    {p: 'Qual a relação entre o sopro em Adão e o sopro de Jesus em João 20?', r: 'O sopro em Adão deu o espírito de vida na criação física; o sopro de Jesus deu o Espírito para a "nova criação" espiritual.'},
-    {p: 'A saída do Espírito de Saul significou que ele perdeu a salvação?', r: 'A lição afirma que não há base bíblica para dizer que ele perdeu a salvação, mas sim que perdeu os dons e a alegria do serviço.'},
+    {p: 'Por que o Espírito Santo é chamado de "administrador da Divindade"?', r: 'Porque Ele é o executor de tudo o que Deus faz; Deus jamais agiu sem o Seu Espírito Santo e o Espírito Santo jamais agiu sem o Pai e o Filho.'},
+    {p: 'Qual a relação entre o sopro em Adão e o sopro de Jesus em João 20?', r: 'O sopro em Adão deu o espírito de vida na criação física; o sopro de Jesus deu o Espírito Santo para a "nova criação" espiritual.'},
+    {p: 'A saída do Espírito Santo de Saul significou que ele perdeu a salvação?', r: 'A lição afirma que não há base bíblica para dizer que ele perdeu a salvação, mas sim que perdeu os dons e a alegria do serviço.'},
     {p: 'Por que o Pentecostes não deve ser visto como um fato isolado?', r: 'Porque o Espírito Santo sempre atuou de modo contínuo na história da revelação, desde os primórdios da humanidade.'},
     {p: 'Como o Espírito Santo sustentava o povo de Israel apesar da rebeldia?', r: 'O povo caminhou sob a misericórdia divina, embora muitas vezes tenha sido rebelde e entristecido o Espírito Santo com suas atitudes.'},
     {p: 'O que significa o Espírito Santo "pairar sobre o caos"?', r: 'Significa que Ele estava organizando os elementos da criação, trazendo vida e removendo a confusão inicial da matéria.'},
-    {p: 'Como a onipresença do Espírito é descrita no Salmo 139?', r: 'O salmista reconhece que o Espírito o acompanha como executor divino em todos os lugares, desde o ventre materno.'},
-    {p: 'Qual o perigo de resistir à ação santificadora do Espírito?', r: 'A resistência gera endurecimento de coração, similar ao que Estêvão denunciou em Atos 7.51, impedindo a comunhão com Deus.'},
-    {p: 'Como os profetas exerceram ministérios sob condições duras?', r: 'Eles foram capacitados com a plenitude do Espírito, o que lhes deu força para enfrentar autoridades cruéis e incompreensão.'},
-    {p: 'Por que a doutrina do Espírito sofreu poucas alterações entre os Testamentos?', r: 'Porque o Espírito Santo é o mesmo em Seu modo essencial de ser em todas as épocas, alterando apenas Suas atividades conforme a dispensação.'}
+    {p: 'Como a onipresença do Espírito Santo é descrita no Salmo 139?', r: 'O salmista reconhece que o Espírito Santo o acompanha como executor divino em todos os lugares, desde o ventre materno.'},
+    {p: 'Qual o perigo de resistir à ação santificadora do Espírito Santo?', r: 'A resistência gera endurecimento de coração, similar ao que Estêvão denunciou em Atos 7.51, impedindo a comunhão com Deus.'},
+    {p: 'Como os profetas exerceram ministérios sob condições duras?', r: 'Eles foram capacitados com a plenitude do Espírito Santo, o que lhes deu força para enfrentar autoridades cruéis e incompreensão.'},
+    {p: 'Por que a doutrina do Espírito Santo sofreu poucas alterações entre os Testamentos?', r: 'Porque o Espírito Santo é o mesmo em Seu modo essencial de ser em todas as épocas, alterando apenas Suas atividades conforme a dispensação.'}
     ],
   },
   3: {
     iniciante: [
     {p: 'Jesus foi concebido por obra do Espírito Santo?', r: 'Sim, o Espírito Santo foi o administrador responsável por introduzir o Verbo Divino na experiência humana através de Maria.'},
-    {p: 'O Espírito Santo esteve presente no batismo de Jesus?', r: 'Sim, Ele desceu sobre Jesus, marcando o início de Seu ministério realizado sob a unção e direção total do Espírito.'},
+    {p: 'O Espírito Santo esteve presente no batismo de Jesus?', r: 'Sim, Ele desceu sobre Jesus, marcando o início de Seu ministério realizado sob a unção e direção total do Espírito Santo.'},
     {p: 'Quem conduziu Jesus ao deserto para ser tentado?', r: 'O Espírito Santo conduziu Jesus ao deserto para o confronto com Satanás e, após a vitória, conduziu-O para iniciar Seu ministério.'},
-    {p: 'Qual a missão precípua do Espírito segundo o Evangelho de João?', r: 'Sua missão principal é glorificar a Cristo, tornando-O conhecido e enaltecendo o Cristo ressurreto perante as pessoas.'},
-    {p: 'O Espírito Santo fala de si mesmo?', r: 'Não, Jesus afirmou que o Espírito não falaria de si mesmo, mas diria o que ouvisse e anunciaria as coisas de Cristo.'},
-    {p: 'O Espírito Santo habita em todos os cristãos?', r: 'Sim, a Bíblia afirma categoricamente que, se alguém não tem o Espírito de Cristo, essa pessoa não é d\'Ele (não é salva).'},
+    {p: 'Qual a missão principal do Espírito Santo segundo o Evangelho de João?', r: 'Sua missão principal é glorificar a Cristo, tornando-O conhecido e enaltecendo o Cristo ressurreto perante as pessoas.'},
+    {p: 'O Espírito Santo fala de si mesmo?', r: 'Não, Jesus afirmou que o Espírito Santo não falaria de si mesmo, mas diria o que ouvisse e anunciaria as coisas de Cristo.'},
+    {p: 'O Espírito Santo habita em todos os cristãos?', r: 'Sim, a Bíblia afirma categoricamente que, se alguém não tem o Espírito Santo de Cristo, essa pessoa não é d\'Ele (não é salva).'},
     {p: 'Qual o papel do Espírito Santo na intercessão?', r: 'Ele intercede pelos salvos com gemidos inexprimíveis, auxiliando-nos quando não sabemos o que pedir em nossas orações.'},
     {p: 'Como o Espírito Santo reparte os dons espirituais?', r: 'Ele distribui dons específicos a cada salvo individualmente, conforme a Sua própria vontade e soberania.'},
-    {p: 'O que é o fruto do Espírito na vida prática?', r: 'É a geração do caráter de Jesus Cristo no cristão, manifestando virtudes como amor, alegria e paz no viver diário.'},
-    {p: 'Como o Espírito atua em relação aos ensinos de Jesus?', r: 'Ele atua como Mestre, dando aos discípulos a capacidade de lembrar e compreender todas as ordens e palavras de Cristo.'}
+    {p: 'O que é o fruto do Espírito Santo na vida prática?', r: 'É a geração do caráter de Jesus Cristo no cristão, manifestando virtudes como amor, alegria e paz no viver diário.'},
+    {p: 'Como o Espírito Santo atua em relação aos ensinos de Jesus?', r: 'Ele atua como Mestre, dando aos discípulos a capacidade de lembrar e compreender todas as ordens e palavras de Cristo.'}
     ],
     avancado: [
     {p: 'Como o Espírito Santo convence o pecador?', r: 'Ele atua convencendo do pecado, da justiça e do juízo, sempre fazendo essa obra em relação direta com a pessoa de Jesus.'},
-    {p: 'O que significa o cristão ser o "santuário" do Espírito Santo?', r: 'Significa que o corpo e a vida do salvo são o lugar de habitação permanente de Deus através do Seu Espírito.'},
+    {p: 'O que significa o cristão ser o "santuário" do Espírito Santo?', r: 'Significa que o corpo e a vida do salvo são o lugar de habitação permanente de Deus através do Seu Espírito Santo.'},
     {p: 'Por que a rejeição ao Espírito Santo é perigosa?', r: 'Rejeitar Sua ação significa recusar o convencimento que leva a Cristo, o que resulta em perdição eterna, conforme o alerta de Jesus.'},
     {p: 'Como o Espírito Santo atua como "Selo" ou "Penhor"?', r: 'Ele sela o cristão como propriedade de Deus e serve como uma garantia (penhor) da herança eterna que receberemos.'},
-    {p: 'Qual a relação entre o Espírito Santo e a liberdade do cristão?', r: 'Onde o Espírito do Senhor atua, não há confusão, rancor ou divisão, mas liberdade plena para servir e adorar.'},
+    {p: 'Qual a relação entre o Espírito Santo e a liberdade do cristão?', r: 'Onde o Espírito Santo do Senhor atua, não há confusão, rancor ou divisão, mas liberdade plena para servir e adorar.'},
     {p: 'Como o Espírito Santo atua na santificação mencionada por Pedro?', r: 'Ele é o agente divino que opera a santificação no salvo, preparando-o para a obediência e aspersão do sangue de Jesus.'},
-    {p: 'O que significa o clamor "O Espírito e a esposa dizem: Vem!"?', r: 'Representa o anseio gerado pelo Espírito no coração da Igreja pela volta gloriosa e comunhão íntima com Jesus Cristo.'},
+    {p: 'O que significa o clamor "O Espírito Santo e a esposa dizem: Vem!"?', r: 'Representa o anseio gerado pelo Espírito Santo no coração da Igreja pela volta gloriosa e comunhão íntima com Jesus Cristo.'},
     {p: 'De que forma o Espírito Santo inspirou os profetas do Novo Testamento?', r: 'Da mesma forma que no Antigo, Ele usou pessoas para transmitir a mensagem divina e registrar as verdades nas páginas sagradas.'},
     {p: 'Por que o Espírito Santo nada falou de si mesmo no Pentecostes?', r: 'Porque Seu objetivo era dar poder aos discípulos para testemunhar que Jesus foi feito Senhor absoluto por Deus Pai.'},
     {p: 'Como o Espírito Santo examina nossas intenções na oração?', r: 'Ele sonda o profundo do coração humano, conhece nossas reais necessidades e ajusta nosso clamor à vontade de Deus.'}
@@ -2419,11 +2449,11 @@ const FAQ = {
     {p: 'O que a lição afirma sobre a luta entre o bem e o mal?', r: 'Não existe um dualismo onde forças do bem e do mal lutam em pé de igualdade; Deus é soberano e Senhor absoluto sobre todas as coisas, incluindo as forças malignas.'},
     {p: 'Como Paulo descreve os cristãos que agem com o espírito do mundo?', r: 'Ele os denomina "carnais" e "meninos em Cristo", indicando que são salvos imaturos que ainda não possuem condições espirituais para receber alimento sólido.'},
     {p: 'Quais são as características práticas do "espírito mundano" na igreja?', r: 'As características incluem a presença de inveja, brigas, divisões e a formação de grupos que geram confusão e afastam os salvos uns dos outros.'},
-    {p: 'O que significa o termo "carnal" no versículo 1 de 1 Coríntios 3?', r: 'Refere-se a cristãos recém-convertidos que, pela pouca maturidade, ainda precisam ser alimentados com "leite" espiritual.'},
+    {p: 'O que significa o termo "carnal" no versículo 1 de 1 Coríntios 3?', r: 'No versículo 1, refere-se à imaturidade natural de novos convertidos; no versículo 3, o termo original indica uma submissão à natureza carnal que gera divisões deliberadas.'},
     {p: 'A quem pertence a igreja de acordo com a lição?', r: 'A igreja não pertence a pastores ou grupos; ela é a noiva de Cristo, pertence exclusivamente a Ele e deve ser preservada como Sua esposa.'},
     {p: 'O que acontece com o trabalho realizado sob a influência da vaidade humana?', r: 'O resultado é negativo e não permanece; é uma atividade sem fruto real, pois foca na exaltação do indivíduo e não na glória de Cristo.'},
     {p: 'O cristão imaturo perde a sua salvação?', r: 'Não; ele é um salvo que perde a alegria de uma vida plena e a oportunidade de usufruir bênçãos, mas a lição afirma que ele não perde a salvação.'},
-    {p: 'O que significa ser "santuário do Espírito Santo"?', r: 'Significa que somos a habitação permanente do Espírito, que nos acompanha em todas as circunstâncias e nunca desiste do Seu santuário humano.'},
+    {p: 'O que significa ser "santuário do Espírito Santo"?', r: 'Significa que somos a habitação permanente do Espírito Santo, que nos acompanha em todas as circunstâncias e nunca desiste do Seu santuário humano.'},
     {p: 'Como o Espírito Santo atua em relação à sabedoria humana?', r: 'Ele trabalha a humildade e não permite arrogância; diante de Cristo, o salvo reconhece que a sabedoria humana é limitada e que não sabe tudo.'},
     {p: 'Qual o conselho de João sobre o "mundo" em sua primeira carta?', r: 'O cristão não deve amar o mundo no sentido da sociedade corrompida pelo pecado, mas deve interagir nela como luz e sal.'}
     ],
@@ -2432,7 +2462,7 @@ const FAQ = {
     {p: 'Por que o partidarismo é considerado uma evidência de mundanismo?', r: 'Porque foca em líderes humanos (como Paulo ou Apolo), dividindo o corpo de Cristo e ignorando a unidade que o Espírito Santo promove.'},
     {p: 'Como o Espírito Santo atua na libertação do "espírito do mundo"?', r: 'Ele convence o salvo de que tudo procede de Deus e o orienta em cada detalhe, permitindo que o cristão edifique sobre o fundamento correto.'},
     {p: 'O que significa "edificar com sabedoria" sobre o fundamento de Cristo?', r: 'Significa buscar a vontade de Deus em todas as decisões, garantindo que o trabalho seja alicerçado na verdade eterna e não em vaidades passageiras.'},
-    {p: 'Como a onipresença do Espírito Santo afeta o conceito de "visita" divina?', r: 'O Espírito não nos visita nem marca hora; Ele habita em nós permanentemente, inclusive nos momentos críticos, servindo de amparo contínuo.'},
+    {p: 'Como a onipresença do Espírito Santo afeta o conceito de "visita" divina?', r: 'O Espírito Santo não nos visita nem marca hora; Ele habita em nós permanentemente, inclusive nos momentos críticos, servindo de amparo contínuo.'},
     {p: 'Qual o papel da humildade na manutenção da liderança espiritual?', r: 'A humildade evita a arrogância e permite que o líder busque o padrão de Jesus, reconhecendo que a posição ocupada não deve gerar soberba.'},
     {p: 'Por que o trabalho realizado com fundamentos falsos é comparado a "areia movediça"?', r: 'Porque, embora pareça real momentaneamente, ele não resistirá ao tempo ou ao juízo divino por ter sido feito para exaltar o homem.'},
     {p: 'Como o cristão deve se comportar em ambientes corrompidos pela maldade?', r: 'Deve revelar o poder do Espírito Santo através de uma vida prática que brilha intensamente, especialmente onde as trevas são mais densas.'},
@@ -2444,11 +2474,11 @@ const FAQ = {
     iniciante: [
     {p: 'Qual a origem da salvação de acordo com a lição?', r: 'A salvação é uma dádiva divina, fruto exclusivo da abundante graça do Senhor, oferecida indistintamente a todos sem qualquer mérito humano.'},
     {p: 'De que três coisas o Espírito Santo convence o mundo segundo Jesus?', r: 'O Espírito Santo viria para convencer o mundo do pecado, da justiça e do juízo.'},
-    {p: 'O que acontece quando o Espírito convence o pecador do pecado?', r: 'Ele gera uma consciência de culpabilidade diante de Deus, levando o indivíduo a sentir necessidade do Senhor e a perguntar o que fazer.'},
+    {p: 'O que acontece quando o Espírito Santo convence o pecador do pecado?', r: 'Ele gera uma consciência de culpabilidade diante de Deus, levando o indivíduo a sentir necessidade do Senhor e a perguntar o que fazer.'},
     {p: 'Qual a relação entre a incredulidade e a vontade humana?', r: 'A incredulidade é volitiva; as pessoas escolhem e decidem ser incrédulas, o que gera uma atitude de rebelião consciente contra Deus.'},
     {p: 'Como a justiça divina é comparada à justiça humana na lição?', r: 'A justiça humana é comparada a "trapos imundos", algo nojento ao extremo diante da pureza e dos requisitos da justiça de Deus.'},
     {p: 'O que o Espírito Santo faz em relação ao juízo divino?', r: 'Ele convence o pecador de que, ao crer em Cristo, ele já está julgado n\'Ele e não terá que enfrentar o juízo condenatório final.'},
-    {p: 'Quem é o instrumento que o Espírito usa no ato da conversão?', r: 'O instrumento principal é a Palavra de Deus, descrita como a "espada do Espírito", que penetra o coração e conduz à fé.'},
+    {p: 'Quem é o instrumento que o Espírito Santo usa no ato da conversão?', r: 'O instrumento principal é a Palavra de Deus, descrita como a "espada do Espírito Santo", que penetra o coração e conduz à fé.'},
     {p: 'O Espírito Santo salva o pecador diretamente?', r: 'Não; a missão de salvar é de Cristo, mas o Espírito Santo atua no terreno do raciocínio para levar a pessoa a crer em Cristo.'},
     {p: 'O que caracteriza a resistência ao Espírito Santo segundo o texto?', r: 'Caracteriza-se pela recusa em crer em Cristo para a salvação, agindo com rebeldia consciente, como citado no discurso de Estêvão.'},
     {p: 'Qual a importância do arrependimento mencionado nesta lição?', r: 'O arrependimento é a virtude que permite ao pecador abandonar a rebeldia e aceitar graciosamente o perdão perfeito oferecido na cruz.'}
@@ -2456,14 +2486,14 @@ const FAQ = {
     avancado: [
     {p: 'Como o Espírito Santo atua no terreno do raciocínio das pessoas?', r: 'Ele leva o indivíduo a reconhecer a verdade dos fatos e as consequências lógicas de seus atos, impedindo que ele negue sua culpabilidade.'},
     {p: 'Por que se', r: 'afirma que o Espírito Santo respeita o livre arbítrio humano? Porque, embora convença racionalmente sobre o pecado e a justiça, Ele deixa o ser humano livre para decidir se vai ou não depositar sua fé em Jesus.'},
-    {p: 'Qual a função da "justiça de Cristo" no processo de justificação?', r: 'O Espírito Santo convence o pecador de que apenas na justiça de Cristo ele pode ser declarado justo e aceito perante o Pai.'},
-    {p: 'Por que o termo "pecado" não deve ser substituído por palavras mais suaves?', r: 'Porque Jesus foi claro ao dizer que o Espírito convenceria do "pecado"; termos como "falhas" ou "desajustes" tiram a gravidade da rebeldia contra Deus.'},
-    {p: 'Como o Espírito Santo remove a possibilidade de desculpas perante Deus?', r: 'Ao convencer intelectualmente o homem da sua condição, o Espírito retira qualquer alegação de ignorância sobre a necessidade de salvação.'},
+    {p: 'Qual a função da "justiça de Cristo" no processo de justificação?', r: 'Porque, embora convença racionalmente sobre o pecado e a justiça, Ele deixa o ser humano livre para decidir se vai ou não depositar sua fé em Jesus.'},
+    {p: 'Por que o termo "pecado" não deve ser substituído por palavras mais suaves?', r: 'Porque Jesus foi claro ao dizer que o Espírito Santo convenceria do "pecado"; termos como "falhas" ou "desajustes" tiram a gravidade da rebeldia contra Deus.'},
+    {p: 'Como o Espírito Santo remove a possibilidade de desculpas perante Deus?', r: 'Ao convencer intelectualmente o homem da sua condição, o Espírito Santo retira qualquer alegação de ignorância sobre a necessidade de salvação.'},
     {p: 'O que significa o pecador estar "compungido" pelo Espírito Santo?', r: 'Significa que o coração foi atingido pela verdade bíblica, gerando um incômodo espiritual que o impele a buscar uma solução em Deus.'},
     {p: 'Como o Espírito Santo atua para neutralizar a ação de Satanás na mente?', r: 'Ele usa a Palavra de Deus para abrir a mente, permitindo que a pessoa compreenda a riqueza do evangelho apesar das mentiras do inimigo.'},
-    {p: 'Qual o papel do intelecto em relação às emoções no ato da conversão?', r: 'O Espírito atua no intelecto e na memória para equilibrar a emoção, pois a emoção sem limites pode embotar a mente e dificultar o crer racional.'},
-    {p: 'Por que a salvação é descrita como uma "iniciativa do Espírito"?', r: 'Porque o pecador, por ser rebelde e incrédulo, não tem como buscar a salvação por si mesmo; é Deus quem busca o pecador através do Espírito.'},
-    {p: 'Como o sermão de Pedro no Pentecostes exemplifica o uso da "espada do Espírito"?', r: 'Pedro citou verdades bíblicas, a vida de Jesus, Sua morte e ressurreição, elementos que o Espírito usou para penetrar o coração dos ouvintes.'}
+    {p: 'Qual o papel do intelecto em relação às emoções no ato da conversão?', r: 'O Espírito Santo atua no intelecto e na memória para equilibrar a emoção, pois a emoção sem limites pode embotar a mente e dificultar o crer racional.'},
+    {p: 'Por que a salvação é descrita como uma "iniciativa do Espírito Santo"?', r: 'Porque o pecador, por ser rebelde e incrédulo, não tem como buscar a salvação por si mesmo; é Deus quem busca o pecador através do Espírito Santo.'},
+    {p: 'Como o sermão de Pedro no Pentecostes exemplifica o uso da "espada do Espírito Santo"?', r: 'Pedro citou verdades bíblicas, a vida de Jesus, Sua morte e ressurreição, elementos que o Espírito Santo usou para penetrar o coração dos ouvintes.'}
     ],
   },
   6: {
@@ -2475,26 +2505,26 @@ const FAQ = {
     {p: 'Como o Espírito Santo atua na Grande Comissão de Mateus 28?', r: 'Ele garante que Jesus esteja sempre presente com os discípulos, gerando o poder necessário para a evangelização integral do mundo.'},
     {p: 'O Espírito Santo ajuda no relacionamento com "irmãos difíceis"?', r: 'Sim; Ele nos capacita à compreensão, longanimidade e ao amor perdoador, permitindo o convívio pacífico apesar das diferenças.'},
     {p: 'Qual o papel do Espírito Santo em relação às heresias doutrinárias?', r: 'Ele orienta a igreja a manter o bom senso e a boa doutrina, destacando que a obra de Jesus é perfeita e não precisa de complementação.'},
-    {p: 'O Espírito Santo gera sentimentos de ódio ou divisão?', r: 'Não; a essência do Espírito é promover a paz e capacitar para a difícil arte de conviver sem ferir, agredir ou impor vontades.'},
+    {p: 'O Espírito Santo gera sentimentos de ódio ou divisão?', r: 'Não; a essência do Espírito Santo é promover a paz e capacitar para a difícil arte de conviver sem ferir, agredir ou impor vontades.'},
     {p: 'Como Paulo desafia os cristãos em relação ao seu comportamento?', r: 'Ele os desafia a imitá-lo como alguém comprometido com Cristo e cheio do Espírito Santo, agindo com integridade.'},
-    {p: 'Qual o objetivo final da capacitação do Espírito na vida prática?', r: 'O objetivo é desenvolver o caráter e o padrão de Jesus Cristo no salvo, permitindo que ele viva para louvar a Deus.'}
+    {p: 'Qual o objetivo final da capacitação do Espírito Santo na vida prática?', r: 'O objetivo é desenvolver o caráter e o padrão de Jesus Cristo no salvo, permitindo que ele viva para louvar a Deus.'}
     ],
     avancado: [
-    {p: 'Por que a Igreja é descrita como um "milagre que só se explica pela ação do Espírito"?', r: 'Porque ela é formada por pessoas que reconhecem Jesus pela revelação divina, algo que não provém de "carne ou sangue", mas da ação direta do Espírito.'},
-    {p: 'Como a intrepidez de Pedro em Atos 4 exemplifica a capacitação do Espírito?', r: 'Pedro, antes tímido, passou a confrontar autoridades com firmeza, mostrando que o poder do Espírito torna o testemunho impossível de calar.'},
-    {p: 'Qual a importância da "evangelização integral" mencionada na lição?', r: 'Significa o desafio de executar o plano de Deus em todas as esferas, unindo o poder capacitador do Espírito à convicção do testemunho pessoal.'},
+    {p: 'Por que a Igreja é descrita como um "milagre que só se explica pela ação do Espírito Santo"?', r: 'Porque ela é formada por pessoas que reconhecem Jesus pela revelação divina, algo que não provém de "carne ou sangue", mas da ação direta do Espírito Santo.'},
+    {p: 'Como a intrepidez de Pedro em Atos 4 exemplifica a capacitação do Espírito Santo?', r: 'Pedro, antes tímido, passou a confrontar autoridades com firmeza, mostrando que o poder do Espírito Santo torna o testemunho impossível de calar.'},
+    {p: 'Qual a importância da "evangelização integral" mencionada na lição?', r: 'Significa o desafio de executar o plano de Deus em todas as esferas, unindo o poder capacitador do Espírito Santo à convicção do testemunho pessoal.'},
     {p: 'Como o Espírito Santo atua na "arte de conviver" com os diferentes?', r: 'Ele nos ensina a amar pessoas que seriam descartadas em outras instituições, promovendo compreensão e sabedoria para falar no tempo próprio.'},
-    {p: 'O que significa a expressão "Cristo é tudo em todos" no contexto da igreja?', r: 'Significa que a ação do Espírito remove barreiras sociais e culturais, unindo todos sob um mesmo objetivo: glorificar a Deus através de Jesus.'},
-    {p: 'Como a solução dada em Atos 15 exemplifica a autoridade do Espírito na doutrina?', r: 'Após discussões, prevaleceu a orientação do Espírito de que a salvação pela graça é completa e não depende de ritos como a circuncisão.'},
-    {p: 'Qual o perigo da negligência e insubmissão à liderança espiritual?', r: 'Gera crises de liderança onde, embora o Espírito seja eficaz, a falta de enchimento dos líderes enfraquece o testemunho da igreja.'},
+    {p: 'O que significa a expressão "Cristo é tudo em todos" no contexto da igreja?', r: 'Significa que a ação do Espírito Santo remove barreiras sociais e culturais, unindo todos sob um mesmo objetivo: glorificar a Deus através de Jesus.'},
+    {p: 'Como a solução dada em Atos 15 exemplifica a autoridade do Espírito Santo na doutrina?', r: 'Após discussões, prevaleceu a orientação do Espírito Santo de que a salvação pela graça é completa e não depende de ritos como a circuncisão.'},
+    {p: 'Qual o perigo da negligência e insubmissão à liderança espiritual?', r: 'Gera crises de liderança onde, embora o Espírito Santo seja eficaz, a falta de enchimento dos líderes enfraquece o testemunho da igreja.'},
     {p: 'Como o Espírito Santo provê recursos para a Igreja cumprir sua missão?', r: 'Ele habita nos corações, animando, fortalecendo e dando a sabedoria necessária para superar os obstáculos da tarefa evangelizadora.'},
     {p: 'Por que o Espírito Santo não gera lágrimas de dor ou separação?', r: 'Porque Sua essência é a paz e a unificação do corpo de Cristo em torno do amor, trabalhando sempre a reconciliação entre os irmãos.'},
-    {p: 'Qual a relação entre o "testemunho comprometido" e o poder do Espírito?', r: 'Sem o poder do Espírito, o testemunho é ineficaz; a união dessas duas forças é o que garante que a mensagem do evangelho penetre nos corações.'}
+    {p: 'Qual a relação entre o "testemunho comprometido" e o poder do Espírito Santo?', r: 'Sem o poder do Espírito Santo, o testemunho é ineficaz; a união dessas duas forças é o que garante que a mensagem do evangelho penetre nos corações.'}
     ],
   },
   7: {
     iniciante: [
-    {p: 'O que João Batista revelou sobre o ministério de Jesus em relação ao Espírito?', r: 'Ele anunciou que, enquanto seu batismo era com água, Jesus seria o responsável por batizar as pessoas com o Espírito Santo e com fogo.'},
+    {p: 'O que João Batista revelou sobre o ministério de Jesus em relação ao Espírito Santo?', r: 'Ele anunciou que, enquanto seu batismo era com água, Jesus seria o responsável por batizar as pessoas com o Espírito Santo e com fogo.'},
     {p: 'Qual é a definição de batismo no Espírito Santo dada por Jesus em Atos?', r: 'Jesus interpreta o batismo no Espírito Santo como sendo o "revestimento de poder" vindo do alto sobre os discípulos.'},
     {p: 'Qual a finalidade prática desse batismo para o cristão?', r: 'A finalidade é capacitar os seguidores de Cristo com poder para que eles sejam Suas testemunhas em todos os lugares.'},
     {p: 'Onde os discípulos deveriam esperar pelo cumprimento dessa promessa?', r: 'Eles receberam a ordem de permanecer em Jerusalém até que fossem revestidos desse poder do alto.'},
@@ -2503,45 +2533,45 @@ const FAQ = {
     {p: 'O batismo no Espírito Santo é restrito a algum grupo social ou etnia?', r: 'Não; a promessa é para qualquer ser humano, independentemente de nacionalidade, etnia, cor ou posição social.'},
     {p: 'Como João Batista se posicionava diante da grandeza de Jesus?', r: 'Com humildade, ele afirmava ser necessário que Jesus crescesse e que ele próprio (João) diminuísse.'},
     {p: 'O que o batismo no Espírito Santo confirma sobre o sacrifício de Cristo?', r: 'Ele serve para reafirmar que o sacrifício realizado por Jesus foi perfeito, completo e plenamente aceito por Deus Pai.'},
-    {p: 'Qual a virtude central trabalhada nesta lição?', r: 'A virtude é a Humildade, exemplificada pela postura de João Batista e pela submissão necessária para receber o Espírito.'}
+    {p: 'Qual a virtude central trabalhada nesta lição?', r: 'A virtude é a Humildade, exemplificada pela postura de João Batista e pela submissão necessária para receber o Espírito Santo.'}
     ],
     avancado: [
-    {p: 'Por que Jesus não ensinou sobre o "batismo no Espírito" nos discursos de João 13 a 17?', r: 'Embora falasse do Espírito como Consolador e que Ele habitaria nos discípulos, Jesus só usou o termo "batismo" no dia de sua ascensão.'},
-    {p: 'Qual a diferença entre a habitação do Espírito e o batismo mencionado em Atos 1.5?', r: 'Jesus afirmou que o Espírito já habitava nos discípulos, mas o batismo seria um revestimento de poder específico para o testemunho público.'},
-    {p: 'Por que se', r: 'afirma que o Pentecostes é um fato histórico que não se repete? Assim como o sacrifício de Cristo foi perfeito e único, o Pentecostes foi o marco inicial e definitivo da vinda do Espírito, que agora permanece.'},
-    {p: 'Como Pedro utiliza a profecia de Joel para explicar o que ocorreu no Pentecostes?', r: 'Ele mostra que o derramamento do Espírito cumpre o plano de Deus de alcançar todas as pessoas, removendo barreiras de idade, sexo ou classe.'},
+    {p: 'Por que Jesus não ensinou sobre o "batismo no Espírito Santo" nos discursos de João 13 a 17?', r: 'Embora falasse do Espírito Santo como Consolador e que Ele habitaria nos discípulos, Jesus só usou o termo "batismo" no dia de sua ascensão.'},
+    {p: 'Qual a diferença entre a habitação do Espírito Santo e o batismo mencionado em Atos 1.5?', r: 'Jesus afirmou que o Espírito Santo já habitava nos discípulos, mas o batismo seria um revestimento de poder específico para o testemunho público.'},
+    {p: 'Por que se', r: 'afirma que o Pentecostes é um fato histórico que não se repete? Assim como o sacrifício de Cristo foi perfeito e único, o Pentecostes foi o marco inicial e definitivo da vinda do Espírito Santo, que agora permanece.'},
+    {p: 'Como Pedro utiliza a profecia de Joel para explicar o que ocorreu no Pentecostes?', r: 'Assim como o sacrifício de Cristo foi perfeito e único, o Pentecostes foi o marco inicial e definitivo da vinda do Espírito Santo, que agora permanece.'},
     {p: 'Qual o significado da expressão "dom do Espírito Santo" usada por Pedro em Atos 2.38?', r: 'Refere-se ao próprio Espírito Santo sendo entregue como um presente de Deus àqueles que creem e se arrependem.'},
     {p: 'Como o batismo no Espírito Santo atua como um divisor de águas eterno?', r: 'A lição ensina que o Espírito Santo une as pessoas a Cristo, mas também separa eternamente aqueles que decidem não crer.'},
     {p: 'Qual a importância da "humildade paulina" no estudo desse tema?', r: 'Significa reconhecer que não conhecemos tudo plenamente e que devemos continuar abertos à ação divina no viver prático.'},
-    {p: 'O que as "línguas como que de fogo" revelam sobre a comunicação do Evangelho?', r: 'Simbolizam que a mensagem de Deus agora seria compreendida por todas as nações através da ação capacitadora do Espírito.'},
+    {p: 'O que as "línguas como que de fogo" revelam sobre a comunicação do Evangelho?', r: 'Simbolizam que a mensagem de Deus agora seria compreendida por todas as nações através da ação capacitadora do Espírito Santo.'},
     {p: 'Por que o batismo de Cornélio foi um marco importante para a Igreja primitiva?', r: 'Provou que Deus deu o mesmo dom aos gentios, mostrando que Pedro não poderia resistir à vontade de Deus de alcançar os não judeus.'},
-    {p: 'Como o batismo no Espírito Santo valida o senhorio de Jesus?', r: 'A vinda do Espírito é a prova viva de que o Cristo ressurreto foi glorificado e recebeu do Pai a promessa para derramá-la sobre a Igreja.'}
+    {p: 'Como o batismo no Espírito Santo valida o senhorio de Jesus?', r: 'A vinda do Espírito Santo é a prova viva de que o Cristo ressurreto foi glorificado e recebeu do Pai a promessa para derramá-la sobre a Igreja.'}
     ],
   },
   8: {
     iniciante: [
     {p: 'Qual o desafio fundamental apresentado para o servo de Deus nesta lição?', r: 'O desafio é buscar a plenitude do Espírito Santo, que é a única condição para um viver de plena comunhão com Deus.'},
     {p: 'O cristão recebe o Espírito Santo em que momento?', r: 'No momento da salvação, o cristão recebe o dom do Espírito Santo, é selado e passa a ser habitação do Senhor.'},
-    {p: 'Ter o Espírito é o mesmo que ser cheio d\'Ele?', r: 'Não necessariamente; podemos ter o Espírito, mas não permitir que Ele nos possua de modo completo e direcione todos os nossos atos.'},
+    {p: 'Ter o Espírito Santo é o mesmo que ser cheio d\'Ele?', r: 'Não necessariamente; podemos ter o Espírito Santo, mas não permitir que Ele nos possua de modo completo e direcione todos os nossos atos.'},
     {p: 'O que acontece quando a nossa natureza pecaminosa domina nossos atos?', r: 'Gera desconforto espiritual e o conflito de nos sentirmos "vendidos" sob o pecado, como descrito em Romanos 7.15.'},
-    {p: 'Onde há pecado, pode existir plenitude do Espírito Santo?', r: 'Não; pecado não se harmoniza com o enchimento do Espírito, pois o pecado entristece o Espírito Santo.'},
+    {p: 'Onde há pecado, pode existir plenitude do Espírito Santo?', r: 'Não; pecado não se harmoniza com o enchimento do Espírito Santo, pois o pecado entristece o Espírito Santo.'},
     {p: 'Quais são as condições de Jesus em João 7 para a plenitude espiritual?', r: 'As condições são: ter sede de Deus, entregar o recipiente limpo a Cristo, entrega integral e beber da fonte que é Jesus.'},
     {p: 'O que simboliza a "sede" mencionada por Jesus?', r: 'Uma busca íntima gerada pelo próprio Espírito que nos leva a desejar profundamente a Deus e Suas verdades.'},
     {p: 'Por que o recipiente (nossa vida) precisa estar limpo?', r: 'Porque a santidade é característica do Espírito Santo, e Ele não compactua com a sujeira de pecados como mágoas e ódios.'},
     {p: 'A plenitude exige uma entrega parcial ou integral?', r: 'Exige a entrega integral, pois Deus não divide com outros aquele que Lhe pertence como propriedade exclusiva.'},
-    {p: 'Qual o alvo principal da plenitude do Espírito Santo no cristão?', r: 'O alvo é produzir o caráter de Jesus Cristo, ou seja, manifestar o fruto do Espírito na vida prática.'}
+    {p: 'Qual o alvo principal da plenitude do Espírito Santo no cristão?', r: 'O alvo é produzir o caráter de Jesus Cristo, ou seja, manifestar o fruto do Espírito Santo na vida prática.'}
     ],
     avancado: [
-    {p: 'Por que é um erro acreditar que a plenitude depende exclusivamente de "implorar" em oração?', r: 'Porque o Espírito já habita no cristão e deseja enchê-lo; o papel do cristão é remover os impedimentos e deixar o caminho livre para Sua obra.'},
-    {p: 'Qual o equívoco de basear o enchimento do Espírito em experiências de crise?', r: 'O erro está em buscar apenas um "sentir" emocional, quando o Espírito almeja que vivamos princípios bíblicos constantes e não apenas reativos.'},
+    {p: 'Por que é um erro acreditar que a plenitude depende exclusivamente de "implorar" em oração?', r: 'Porque o Espírito Santo já habita no cristão e deseja enchê-lo; o papel do cristão é remover os impedimentos e deixar o caminho livre para Sua obra.'},
+    {p: 'Qual o equívoco de basear o enchimento do Espírito em experiências de crise?', r: 'O erro está em buscar apenas um "sentir" emocional, quando o Espírito Santo almeja que vivamos princípios bíblicos constantes e não apenas reativos.'},
     {p: 'Como a metáfora da respiração explica a continuidade da plenitude?', r: 'Assim como respiramos ar novo continuamente para viver, a plenitude não é um "estoque" para sempre, mas uma dependência contínua de Deus.'},
     {p: 'Qual a diferença entre o enchimento de um "bebê" e de um "adulto" em Cristo?', r: 'Ambos podem estar plenos (pulmões cheios), mas o adulto tem maior capacidade de recipiente através da submissão e compreensão de Cristo.'},
-    {p: 'Por que o perdão ao próximo é vital para ser cheio do Espírito?', r: 'Porque mágoas e rancores entristecem o Espírito; um cristão que evita seu irmão jamais terá plena ação do Espírito em seu viver.'},
+    {p: 'Por que o perdão ao próximo é vital para ser cheio do Espírito Santo?', r: 'Porque mágoas e rancores entristecem o Espírito Santo; um cristão que evita seu irmão jamais terá plena ação do Espírito em seu viver.'},
     {p: 'O que significa "beber de Cristo" no contexto da vida cotidiana?', r: 'Significa ir a Jesus como fonte de vida, fazendo-O Senhor de todas as decisões e servindo-O com amor e dedicação.'},
     {p: 'Como o Espírito Santo nos revela o "mistério de Deus-Cristo"?', r: 'Ele abre nossa mente para compreender o significado impenetrável do amor de Deus e nos revela os tesouros divinos ocultos em Cristo.'},
-    {p: 'Por que a plenitude do Espírito é a "única condição" para a plena comunhão?', r: 'Porque sem o controle do Espírito, a natureza pecaminosa impõe sua ação e gera barreira no relacionamento com o Senhor.'},
-    {p: 'Qual a relação entre 1 Tessalonicenses 5.19 e a manutenção da plenitude?', r: 'O texto adverte para não "apagar" o Espírito, o que ocorre quando negligenciamos Sua voz e permitimos o pecado em nossa vida.'},
-    {p: 'Como a plenitude do Espírito Santo abre as portas para os "tesouros divinos"?', r: 'Ela permite que o Espírito cumpra Sua missão de ensinar e lembrar, fazendo o cristão compreender a riqueza da experiência com Cristo.'}
+    {p: 'Por que a plenitude do Espírito Santo é a "única condição" para a plena comunhão?', r: 'Porque sem o controle do Espírito Santo, a natureza pecaminosa impõe sua ação e gera barreira no relacionamento com o Senhor.'},
+    {p: 'Qual a relação entre 1 Tessalonicenses 5.19 e a manutenção da plenitude?', r: 'O texto adverte para não "apagar" o Espírito Santo, o que ocorre quando negligenciamos Sua voz e permitimos o pecado em nossa vida.'},
+    {p: 'Como a plenitude do Espírito Santo abre as portas para os "tesouros divinos"?', r: 'Ela permite que o Espírito Santo cumpra Sua missão de ensinar e lembrar, fazendo o cristão compreender a riqueza da experiência com Cristo.'}
     ],
   },
   9: {
@@ -2551,7 +2581,7 @@ const FAQ = {
     {p: 'Qual o objetivo principal de um cristão receber um dom?', r: 'O alvo não é o benefício de quem recebe, mas a glória de Cristo através do serviço prestado à igreja e ao próximo.'},
     {p: 'Todo cristão possui algum dom espiritual?', r: 'Sim; a lição afirma que todo cristão tem pelo menos um dom espiritual dado graciosamente para o serviço.'},
     {p: 'É necessário fazer testes formais para descobrir seu dom?', r: 'Não; basta se dispor a servir com amor seguindo o exemplo de Jesus, e o dom se manifestará naturalmente no desempenho das tarefas.'},
-    {p: 'Um único crente pode possuir todos os dons do Espírito?', r: 'Não; nenhum crente tem todos os dons, o que nos torna dependentes uns dos outros no serviço ao Senhor.'},
+    {p: 'Um único crente pode possuir todos os dons do Espírito Santo?', r: 'Não; nenhum crente tem todos os dons, o que nos torna dependentes uns dos outros no serviço ao Senhor.'},
     {p: 'O que acontece quando um cristão exerce seu dom com sabedoria?', r: 'Isso produz crescente alegria no servir e edifica os outros membros do corpo de Cristo.'},
     {p: 'O que a lição diz sobre a utilidade de cada membro na igreja?', r: 'Diz que ninguém é dispensável e que cada igreja tem os dons necessários para realizar o trabalho que o Senhor lhe designou.'},
     {p: 'Qual a moldura ou "tempero" indispensável para o uso dos dons?', r: 'O verdadeiro amor; sem ele, qualquer dom ou serviço, por maior que seja, nada significará no Reino de Deus.'},
@@ -2559,15 +2589,15 @@ const FAQ = {
     ],
     avancado: [
     {p: 'Por que a diversidade de dons gera "codependência" na igreja?', r: 'Como ninguém tem todos os dons, precisamos uns dos outros para que o culto e o serviço ao Senhor sejam completos e harmoniosos.'},
-    {p: 'Como a soberania do Espírito na distribuição dos dons evita o ciúme?', r: 'Ao reconhecer que o Espírito sabe onde somos úteis e o que a igreja precisa, o salvo aceita seu papel com gratidão em vez de inveja.'},
-    {p: 'Qual a diferença entre a "fé" como fruto do Espírito e a "fé" como dom espiritual?', r: 'O dom da fé é uma capacidade especial de ver o invisível e crer em soluções divinas em situações onde outros não conseguem.'},
-    {p: 'Por que a lição afirma que não há "desperdício" em Deus em relação aos dons?', r: 'Porque o Espírito dá à igreja exatamente o necessário conforme o potencial e as carências de cada comunidade local.'},
-    {p: 'O que significa "procurar com zelo os melhores dons"?', r: 'Significa desejar ser usado pelo Espírito de forma excelente, permitindo que Ele nos capacite para o serviço sob a motivação do amor.'},
+    {p: 'Como a soberania do Espírito Santo na distribuição dos dons evita o ciúme?', r: 'Ao reconhecer que o Espírito Santo sabe onde somos úteis e o que a igreja precisa, o salvo aceita seu papel com gratidão em vez de inveja.'},
+    {p: 'Qual a diferença entre a "fé" como fruto do Espírito Santo e a "fé" como dom espiritual?', r: 'O dom da fé é uma capacidade especial de ver o invisível e crer em soluções divinas em situações onde outros não conseguem.'},
+    {p: 'Por que a lição afirma que não há "desperdício" em Deus em relação aos dons?', r: 'Porque o Espírito Santo dá à igreja exatamente o necessário conforme o potencial e as carências de cada comunidade local.'},
+    {p: 'O que significa "procurar com zelo os melhores dons"?', r: 'Significa desejar ser usado pelo Espírito Santo de forma excelente, permitindo que Ele nos capacite para o serviço sob a motivação do amor.'},
     {p: 'Como o uso correto dos dons contribui para a unidade da igreja?', r: 'Quando cada membro cumpre seu papel visando o bem-estar do corpo como um todo, a oração de Jesus pela unidade (João 17) se materializa.'},
-    {p: 'Por que é difícil classificar todos os dons existentes hoje?', r: 'Porque o Espírito atua soberanamente em cada situação e lugar, podendo usar habilidades que vão além das listas básicas da Bíblia.'},
+    {p: 'Por que é difícil classificar todos os dons existentes hoje?', r: 'Porque o Espírito Santo atua soberanamente em cada situação e lugar, podendo usar habilidades que vão além das listas básicas da Bíblia.'},
     {p: 'Como o exemplo de Estêvão ilustra o uso dos dons espirituais?', r: 'Ele era um homem "cheio de fé" (dom) que servia em tarefas práticas, demonstrando que dons espirituais visam o serviço aos outros.'},
     {p: 'Qual a relação entre o exercício dos dons e a glória de Deus?', r: 'O serviço prestado através do dom deve sempre apontar para Cristo; se houver orgulho ou vaidade, o valor espiritual do dom se perde.'},
-    {p: 'Por que não devemos orar solicitando dons específicos, mas sim para sermos servos?', r: 'Porque o Espírito já nos conhece na intimidade e sabe qual ferramenta melhor se ajusta a nós; nosso papel é apenas a disponibilidade.'}
+    {p: 'Por que não devemos orar solicitando dons específicos, mas sim para sermos servos?', r: 'Porque o Espírito Santo já nos conhece na intimidade e sabe qual ferramenta melhor se ajusta a nós; nosso papel é apenas a disponibilidade.'}
     ],
   },
 };
@@ -2592,15 +2622,19 @@ function toggleChat() {
   chatAberto = !chatAberto;
   const panel = document.getElementById('chat-panel');
   panel.classList.toggle('aberto', chatAberto);
+  // Bloquear scroll da página quando chat está aberto
+  document.body.style.overflow = chatAberto ? 'hidden' : '';
   if (chatAberto) {
     // Detectar lição atual
     const lid = currentLessonId;
     if (lid && FAQ[lid]) {
+      const licaoMudou = chatLicaoId !== lid;
       chatLicaoId = lid;
       const l = lessons.find(x => x.id === lid);
       document.getElementById('chat-licao-label').textContent =
         l ? 'Lição ' + lid + ' — ' + l.title : 'Lição ' + lid;
-      if (document.getElementById('chat-msgs').children.length === 0) {
+      if (licaoMudou || document.getElementById('chat-msgs').children.length === 0) {
+        document.getElementById('chat-msgs').innerHTML = '';
         chatBoasVindas();
       }
       renderPerguntas();
@@ -2608,7 +2642,7 @@ function toggleChat() {
       document.getElementById('chat-licao-label').textContent = 'Abra uma lição primeiro';
       chatAddMsg('bot', '👋 Olá! Sou o <strong>Paracleto</strong>. Abra uma lição no app e volte aqui para fazer perguntas sobre ela.');
     }
-    setTimeout(() => document.getElementById('chat-input').focus(), 200);
+    // foco removido para não acionar teclado automaticamente
   }
 }
 
@@ -2858,7 +2892,7 @@ function chatEnviar() {
 <div class="chat-panel" id="chat-panel">
   <div class="chat-header">
     <div class="chat-header-info">
-      <div class="chat-header-avatar">🕊</div>
+      <div class="chat-header-avatar">🔥</div>
       <div>
         <div class="chat-header-title">Paracleto</div>
         <div class="chat-header-sub" id="chat-licao-label">Online · Assistente de EBD</div>
