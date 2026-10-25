@@ -1,2 +1,0 @@
-# EBD2tri
-EBD
