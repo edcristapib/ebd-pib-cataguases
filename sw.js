@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ebd-pib-v8';
+const CACHE_NAME = 'ebd-pib-v9';
 const ASSETS = [
   './',
   './index.html',
